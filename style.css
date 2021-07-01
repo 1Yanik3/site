@@ -6,6 +6,11 @@
   --body-margin: 30px; 
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1em;
+}
+
 section:not(:last-of-type) {
   border-bottom: 2px solid var(--text);
 }

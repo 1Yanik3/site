@@ -1,4 +1,3 @@
-// CHANGE THIS!!!!
 const hoursOffset = 1;
 
 const GetClock = element => {
