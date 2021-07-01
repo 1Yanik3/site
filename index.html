@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jacob Haap</title>
+    <link rel="shortcut icon" href="/media/favicon.ico">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <h1>>_</h1>
+    <div align="center">
+      <h3><a href="#about">/about</a> <a href="#projects">/projects</a> <a href="#exp">/exp</a> <a href="#time">/time</a> <a href="#other">/other</a> <a href="#contact">/contact</a></h3>
+    </div>
+    <div>
+      <h1><a id="about">[about]</a></h1>
+      <p>Hej! I’m Jacob, a 18-year-old student and entrepreneur from Cincinnati, currently living in San Mateo. I’m currently working on my Associate of Science at Flathead Valley Community College, on a custom degree path for cybernetics. This incorporates aspects of computer science, biotechnology, anatomy & physiology, and surgical technology. Outside of school, I run my startup, <a href="https://anomaly-science.com/" target="_blank">Anomaly Science</a>, a company redefining what it means to create by connecting people with ideas, to individuals with the right technical skills, and giving them the tools they need to bring the ideas to life. I see it as my purpose in life to better the way humanity is. I wish to the best of my ability assist in the development of new technologies that help increase human lifespan, change the way we think, and improve quality of life. When I think about the things that are most important to me in life, one of them is how I will be remembered. I want to leave my mark on the world, and be remembered for the innovations I made and the people I impacted.</p>
+      <br>
+      <hr>
+      <h1><a id="projects">[projects]</a></h1>
+      <ul>
+        <li>I occasionally work on running a micronation called the <a href="https://github.com/AetherNation" target="_blank">Aether Nation</a>, a constitutional monarchy with nomadic principals.</a></li>
+        <li>I like to draw sneks, viewable at <a href="https://sneks.co/" target="_blank">sneks.co</a> or the <a href="https://github.com/jacobhaap/snek" target="_blank">sneks repository on Github</a>.</li>
+      </ul>
+      <br>
+      <hr>
+      <h1><a id="exp">[exp]</a></h1>
+      <h2>Professional</h2>
+      <ul>
+        <li>Chief Executive Officer // Anomaly Science (2020 - Present)</li>
+        <li>Chairman of the Board // Different Human (2020 - Present)</li>
+      </ul>
+      <h2>Volunteer</h2>
+      <ul>
+        <li>Club Leader // Hack Club (2018 - 2020)</li>
+        <li>Logistics & Advising // AngelHacks (2019 - Present)</li>
+      </ul>
+      <h2>Education</h2>
+      <ul>
+        <li>High School Diploma // Great River Connections Academy (Grad. Jan 2021)</li>
+        <li>Associate of Science - Cybernetics // Flathead Valley Community College (In Progress)</li>
+        <li>Hero Training // Draper University (In Progress)</li>
+      </ul>
+      <br>
+      <hr>
+      <h1><a id="time">[time]</a></h1>
+      <b>The current time is...</b>
+      <h2>
+        <div id="clockbox">Wednesday, June 30, 2021 11:54:41 AM</div>
+      </h2>
+      <b>Jacob Standard Time (JCST) // UTC-8</b>
+      <p>Jacob Standard Time is a system of time keeping I created, that is UTC+/- whatever I feel like. This system was developed so that I could feel better about maintaining a bad sleep schedule, by adjusting the time zone so I could always go to bed at a reasonable time. The time changes are highly unpredictable and individuals are strongly discouraged from using it.</p>
+      <script type="text/javascript">
+         var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+         var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+         
+         function GetClock(){
+         var tzOffset = -8;
+         
+         var d=new Date();
+         var dx=d.toGMTString();
+         dx=dx.substr(0,dx.length -3);
+         d.setTime(Date.parse(dx))
+         d.setHours(d.getHours()+tzOffset);
+         var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+         var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+         
+         if(nhour==0){ap=" AM";nhour=12;}
+         else if(nhour<12){ap=" AM";}
+         else if(nhour==12){ap=" PM";}
+         else if(nhour>12){ap=" PM";nhour-=12;}
+         
+         if(nmin<=9) nmin="0"+nmin;
+         if(nsec<=9) nsec="0"+nsec;
+         
+         var clocktext=""+tday[nday]+", "+ndate+" "+tmonth[nmonth]+" "+nyear+", "+nhour+":"+nmin+":"+nsec+ap+"";
+         document.getElementById('clockbox').innerHTML=clocktext;
+         }
+         
+         GetClock();
+         setInterval(GetClock,1000);
+      </script>
+      <br>
+      <hr>
+      <h1><a id="other">[other]</a></h1>
+      <p>In case you needed to hear some random facts about me, here are some.</p>
+      <ul>
+        <li>I love aviation. My favorite airline is United Airlines, and my favorite aircraft is the Boeing 787 Dreamliner. You can see all the flights I've taken at <a href="https://my.flightradar24.com/jacobhaap" target="_blank">myFlightradar24</a>.</li>
+        <li>I am a giant (6' 7").</li>
+        <li>I am a proud Android user!</li>
+        <li>My favorite games are Minecraft, No Man's Sky, Undertale, and Portal.</li>
+        <li>My favorite band is Arcade Fire.</li>
+        <li>I love dinosaurs, more specifically sauropods!</li>
+      </ul>
+      <br>
+      <hr>
+      <h1><a id="contact">[contact]</a></h1>
+      <p>If you would like to contact me, there are a few ways to do so.</p>
+      <ul>
+        <li>Email: Being contacted by email is my preferred method. My email address is <a href="mailto:jacobhaap@gmail.com">jacobhaap@gmail.com</a>.</li>
+        <li>Social Media: You can find me on different social media platforms. Below are the ones I use most often:
+          <ul>
+            <li>Discord // Normal Person#8888</li>
+            <li>Reddit // u/JacobHacks</li>
+            <li>Twitter // @jacobhaap</li>
+            <li>Snapchat // @jacobhaap</li>
+          </ul>
+        </li>
+        <li>Squawk 7700: I can also be contacted through the declaration of an aircraft emergency by Squawk code 7700. Simply write your message in your flight path, and once the emergency is declared I will recieve an alert.</li>
+        <br>
+        <div align="center">
+        <p><b class="copyright">Copyright ©2021 Jacob Haap. All rights reserved.</b></p>
+        </div>
+    </div>
+  </body>
+</html>
